@@ -1,9 +1,8 @@
 package kr.kro.sosohanbox.gumiinformationschool;
 
-import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -87,14 +86,13 @@ public class MainActivity extends AppCompatActivity {
         imageView.setBackgroundResource(image);
 
         v_fllipper.addView(imageView);      // 이미지 추가
-        v_fllipper.setFlipInterval(6000);       // 자동 이미지 슬라이드 딜레이시간(1000 당 1초)
+        v_fllipper.setFlipInterval(5000);       // 자동 이미지 슬라이드 딜레이시간(1000 당 1초)
         v_fllipper.setAutoStart(true);          // 자동 시작 유무 설정
 
         // animation
         v_fllipper.setInAnimation(this,android.R.anim.fade_in);
         v_fllipper.setOutAnimation(this,android.R.anim.fade_out);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
